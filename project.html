@@ -26,24 +26,24 @@ let post = " ";
 var i;
 for (i = 0; i < cars.length; i++) {
 
-    // post += `<div class="col-lg-3 mb-3">
-    //             <div class="card">
-    //                 <div class="card-body">
-    //                     <h5 class="card-title"><span class="text-primary">${i}</span> ${cars[i]}</h5>
-    //                 </div>
-    //             </div>
-    //         </div>`;
-//   text += cars[i] + "<br>";
-post += `<div class="col-lg-3 mb-3">
+    post += `<div class="col-lg-3 mb-3">
                 <div class="card">
-                    <img src="./assets//images/placeholder.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">${cars[i]}</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title"><span class="text-primary">${i+1}</span> ${cars[i]}</h5>
                     </div>
                 </div>
             </div>`;
+//   text += cars[i] + "<br>";
+// post += `<div class="col-lg-3 mb-3">
+//                 <div class="card">
+//                     <img src="./assets//images/placeholder.png" class="card-img-top" alt="...">
+//                     <div class="card-body">
+//                         <h5 class="card-title">${cars[i]}</h5>
+//                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+//                         <a href="#" class="btn btn-primary">Go somewhere</a>
+//                     </div>
+//                 </div>
+//             </div>`;
 }
 document.getElementById("posts").innerHTML = post;
 document.getElementById("array-length").innerHTML = cars.length;

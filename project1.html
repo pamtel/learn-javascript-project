@@ -20,11 +20,13 @@
     
     <script>
         var colors = ["blue", "yellow", "red", "white", "pink", "purple", "black", "green"];
-        let repeat = " ";
+        let repeat = "";
         var i;
-        for (i = 0; i < colors.length; i++);{
+        for (i = 0; i < colors.length; i++) {
+
+        
             repeat += `<div class="col-lg-3 mb-3">
-                <div class="card">
+                <div class="card ${i === 4 ? 'bg-info' : ''}">
                     <div class="card-body">
                         <h5 class="card-title"><span class="text-primary">${i}</span> ${colors[i]}</h5>
                     </div>
@@ -44,6 +46,8 @@
         }
         document.getElementById("duplicate").innerHTML = repeat;
         document.getElementById("length").innerHTML = colors.length;
+
+        console.log('Color',colors[0])
 
 
     </script>
