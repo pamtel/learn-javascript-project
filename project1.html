@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap5.css">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body class="bg-light pt-5">
+    <div class="container">
+        <h1 id="length"></h1>
+        <div class="row"  id="duplicate">
+            
+        </div>
+    </div>
+    
+    <script>
+        var colors = ["blue", "yellow", "red", "white", "pink", "purple", "black", "green"];
+        let repeat = " ";
+        var i;
+        for (i = 0; i < colors.length; i++);{
+            repeat += `<div class="col-lg-3 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"><span class="text-primary">${i}</span> ${colors[i]}</h5>
+                    </div>
+                </div>
+            </div>`;
+        
+        // repeat += `<div class="col-lg-3 mb-3">
+        //         <div class="card">
+        //             <img src="./assets//images/placeholder.png" class="card-img-top" alt="...">
+        //             <div class="card-body">
+        //                 <h5 class="card-title">${colors[i]}</h5>
+        //                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        //                 <a href="#" class="btn btn-primary"></a>
+        //             </div>
+        //         </div>
+        //     </div>`
+        }
+        document.getElementById("duplicate").innerHTML = repeat;
+        document.getElementById("length").innerHTML = colors.length;
+
+
+    </script>
+</body>
