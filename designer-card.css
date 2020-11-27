@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.single-plan{
+    text-align: center;
+    background: #262626;
+    margin-top: 20px;
+    transition: 0.7s;
+}
+
+.single-plan h3{
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: -100px;
+    margin-bottom: 35px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.single-plan h4{
+    font-size: 48px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.single-plan span{
+    font-size: 30px;
+    margin-left: -5px;
+}
+
+.single-plan h5{
+    color: #fff;
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+
+.deal-top{
+    position: relative;
+    background: #2d62bd;
+    font-size: 16px;
+    padding: 136px 24px 0;
+    border-radius: 0px 0px 100px 0px;
+}
+
+.deal-bottom{
+    padding: 56px 16px 0;
+}
+
+.deal-bottom ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.deal-bottom ul li{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 300;
+    margin-top: 13px;
+    border-top: 1px solid #ddd;
+    padding-top: 16px;
+}
+
+.btn-area a{
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    background: #2d62bd;
+    padding: 8px 24px;
+    margin-top: 32px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.single-plan:hover{
+    background: #2d62bd;
+}
+
+.single-plan:hover .deal-top{
+    background: #262626;
+}
+
+.single-plan:hover .btn-area a{
+    background: #262626;
+}
+
